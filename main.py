@@ -20,7 +20,7 @@ class Auto:
         b=True
         if self.motor.registro!= self.registro:
             b=False
-        for i in Asiento.registro():
+        for i in self.__Asiento__.registro():
             if self.asientos!=i:
                 b=False
         if b==True:
