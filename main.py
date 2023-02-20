@@ -11,10 +11,10 @@ class Auto:
         Auto.cantidadCreados=self.cantidadCreados
 
     def cantidadAsientos(self):
-        a=1
+        a=0
         for i in self.asientos:
             if isinstance(self.asientos,Asiento):
-                a+=1
+                a=i
                 return a
     def verificarIntegridad(self):
         b=True
