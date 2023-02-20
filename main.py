@@ -18,10 +18,10 @@ class Auto:
                 return a
     def verificarIntegridad(self):
         b=True
-        if self.motor.registro!= self.registro:
+        if Motor.registro!= self.registro:
             b=False
         for asientos in self.asientos:
-            if self.asientos.registro!=self.registro:
+            if Asiento.registro!=self.registro:
                 b=False
         if b==True:
             return("Auto original")
