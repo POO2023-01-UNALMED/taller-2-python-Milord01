@@ -1,6 +1,6 @@
-cantidadCreados=0
-a=0
+
 class Auto: 
+    cantidadCreados=0
     def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
@@ -8,10 +8,10 @@ class Auto:
         self.marca=marca
         self.motor=motor
         self.registro=registro
-        Auto.cantidadCreados=cantidadCreados
+        Auto.cantidadCreados=self.cantidadCreados
 
     def cantidadAsientos(self):
-    
+        a=1
         for i in self.asientos:
             if isinstance(self.asientos,Asiento):
                 a+=1
@@ -24,9 +24,9 @@ class Auto:
             if self.asientos.registro!=self.registro:
                 b=False
         if b==True:
-            return('Auto original')
+            return("Auto original")
         else:
-            return('Las piezas no son originales')
+            return("Las piezas no son originales")
 
 
 class Asiento:
