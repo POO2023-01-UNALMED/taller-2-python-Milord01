@@ -20,8 +20,8 @@ class Auto:
         b=True
         if Motor.registro!= self.registro:
             b=False
-        for asientos in self.asientos:
-            if Asiento.registro!=self.registro:
+        for i in self.asientos:
+            if Asiento.registro!=i:
                 b=False
         if b==True:
             return("Auto original")
