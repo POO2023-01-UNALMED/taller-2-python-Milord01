@@ -23,8 +23,9 @@ class Auto:
 
 
         for i in self.asientos:
-            if i!=Asiento.registro[i]:
-                b=False
+            if isinstance (i,Asiento):
+              if i.registro!=self.registro:
+                 b=False
 
 
         if b==True:
