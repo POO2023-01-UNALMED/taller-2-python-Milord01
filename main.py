@@ -20,9 +20,13 @@ class Auto:
         b=True
         if self.motor.registro!= self.registro:
             b=False
-        for i in self.__Asiento__.registro():
-            if self.asientos!=i:
+
+
+        for i in self.asientos:
+            if i!=Asiento.registro[i]:
                 b=False
+
+
         if b==True:
             return("Auto original")
         else:
